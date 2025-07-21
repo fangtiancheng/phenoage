@@ -17,7 +17,7 @@ from phenoage import pheno_age, PhenoAgeInput
 # Example: 40-year-old male
 p = PhenoAgeInput(
     age=40, albumin=42, creatinine=88, glucose=5.3,
-    crp=0.15, lymphocyte_pct=30, mcv=90, rdw=13,
+    crp=0.5, lymphocyte_pct=30, mcv=90, rdw=13,
     alkaline_phosphatase=70, wbc=6.5
 )
 print("PhenoAge =", pheno_age(p), "years")
@@ -32,7 +32,7 @@ print("PhenoAge =", pheno_age(p), "years")
 | `albumin` | g/L | Serum albumin |
 | `creatinine` | µmol/L | Serum creatinine |
 | `glucose` | mmol/L | Fasting plasma glucose |
-| `crp` | mg/dL | C-reactive protein |
+| `crp` | mg/L | C-reactive protein |
 | `lymphocyte_pct` | % | Lymphocyte percentage |
 | `mcv` | fL | Mean cell volume |
 | `rdw` | % | Red cell distribution width |
